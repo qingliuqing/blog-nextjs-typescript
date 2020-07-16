@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Header from '../components/Header';
-import PostList from '../components/PostList';
-import TagList from '../components/TagList';
+import Header from '../../components/Header';
+import PostList from '../../components/PostList';
 
 export default function Index() {
   return (
@@ -17,7 +16,6 @@ export default function Index() {
         </h2>
         <div className="flex flex-row justify-between">
             <PostList/>
-            <TagList/>
         </div>
     </div>
   )

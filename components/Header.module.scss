@@ -1,0 +1,22 @@
+.header--description {
+    color: #3f3d55;
+    font-size: 14px;
+}
+.header--navlink {
+    position: relative;
+    margin-right: 10px;
+    color: #3f3d55;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: top .2s cubic-bezier(0,.8,.13,1);
+        background-color: rgba(51,122,183,.3);
+    }
+    &:hover:after {
+        top: 0;
+    }
+}
